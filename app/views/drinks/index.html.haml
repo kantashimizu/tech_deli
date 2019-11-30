@@ -2,6 +2,9 @@
   .main
     .title
       TECH::DELI
+    -if @owner == current_user
+      = link_to "/orders/show" do
+        管理者    
     - if @time.hour >= 24
       .main_drink
         対応時間外です
@@ -17,3 +20,4 @@
                   = drink.name
         
 -# (@time.hour >= 11 && @time.hour <= 12) || (@time.hour >= 18 && @time.hour <= 19) || (@time.hour <= 10) || (@time.hour >= 22)
+
