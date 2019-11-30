@@ -1,6 +1,7 @@
 class OrdersController < ApplicationController
   def new
     @drink = Drink.find(params[:id])
+    @price = @drink.price * 1.1
   end
 
   def create
@@ -13,7 +14,7 @@ class OrdersController < ApplicationController
   private
 
   def order_params
-    params.require(:order).permit(:user_id,:drink_id)
+    params.require(:order).permit(:seat,:user_id,:drink_id)
   end
 
 end
