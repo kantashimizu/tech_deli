@@ -3,4 +3,6 @@ class DrinksController < ApplicationController
     @drinks = Drink.all
   end
 
+  
+
 end
