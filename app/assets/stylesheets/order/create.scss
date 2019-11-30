@@ -1,0 +1,24 @@
+.main_create{
+  height: 400px;
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 100px;
+  background-color: seashell;
+  display: flex;
+  .create_image{
+    height: 400px;
+    width: 300px;
+    background-color: cadetblue;
+  }
+  .create_box{
+    height: 400px;
+    width: 300px;
+    background-color: rgb(160, 95, 154);
+  }
+}
+.create_messeage{
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 60px;
+}
