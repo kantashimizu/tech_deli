@@ -7,6 +7,7 @@
     .drink_price
       ="お会計：#{@price.to_i}円(手数料込み)"
   %form{action: "/orders" ,method:"post",class: "form"}
+    %input{type: "text",name: "seat",placeholder: "席番号"}
     %input{type: "hidden",name: "user_id",value: current_user.id}
     %input{type: "hidden",name: "drink_id",value: @drink}
     %input{type: "submit",value: "購入"}
