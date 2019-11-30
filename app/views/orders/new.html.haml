@@ -6,7 +6,9 @@
       .drink_image
         %img{src:@drink.image}
       .drink_price
-        ="お会計：#{@price.to_i}円(手数料込み)"
+        ="お会計：#{@price.to_i}円"
+        .kome
+          (手数料込み) 
         %form{action: "/orders/#{@drink.id}" ,method:"post",class: "form"}
           %input{type: "text",name: "seat",placeholder: "席番号",class:"num"}
           %input{type: "hidden",name: "user_id",value: current_user.id}

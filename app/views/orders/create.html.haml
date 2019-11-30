@@ -1,13 +1,20 @@
-.wrapper
-  .header
-  .main
-    main
-    .main_create 
-      .create_image
-        image
-      .create_box
-        name
-        price
-    .create_messeage
-      注文が完了致しましア
+.background_new
+  .show_wrapper
+    = link_to "home",root_path
+    .drink_info 
+      .drink_name
+        ="購入ドリンク：#{@drink.name}"
+      .drink_image
+        %img{src:@drink.image}
+      .drink_price
+        ="お会計：#{@price.to_i}円"
+        .kome
+          (手数料込み)  
+      .order_message
+        注文が完了致しましました。
+        少々お待ちください。
+      .create_name
+        ="#{@order.user.name} 様"
+      .create_num
+        ="座席番号: #{@order.seat}"
 

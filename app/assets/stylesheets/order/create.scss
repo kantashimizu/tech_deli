@@ -1,24 +1,14 @@
-.main_create{
-  height: 400px;
-  width: 600px;
-  margin: 0 auto;
-  padding-top: 100px;
-  background-color: seashell;
-  display: flex;
-  .create_image{
-    height: 400px;
-    width: 300px;
-    background-color: cadetblue;
-  }
-  .create_box{
-    height: 400px;
-    width: 300px;
-    background-color: rgb(160, 95, 154);
-  }
+.order_message{
+  color:white;
+  font-size:20px;
 }
-.create_messeage{
-  width: 600px;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 60px;
+.create_name{
+  color:white;
+  font-size: 25px;
+  margin-top: 15px;
+}
+.create_num{
+  color:white;
+  font-size: 23px;
+  margin-top: 15px;
 }
