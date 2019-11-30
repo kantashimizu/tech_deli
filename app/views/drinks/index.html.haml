@@ -3,9 +3,10 @@
     header
   .main
     main
-    .main_drink
+    .main_drink   
       .drink_box
         - @drinks.each do |drink|
           = link_to "/orders/new/#{drink.id}" do
             .drink_image
               = drink.name
+
