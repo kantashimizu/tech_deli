@@ -1,16 +1,8 @@
 .wrapper
-  .header
-    = link_to "paso","/orders/1"
   .main
-    main
     .main_drink 
-      注文するドリンクしてかださあk  
       .drink_box
         - @drinks.each do |drink|
           = link_to "/orders/new/#{drink.id}" do
             .drink_image
               %img{src:drink.image,height: '150',width: '92'}
-          
-          
-          
-
