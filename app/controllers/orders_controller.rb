@@ -6,7 +6,7 @@ class OrdersController < ApplicationController
 
   def create
     @drink = Drink.find(params[:id])
-    @order = Ooder.new(order_params)
+    @order = Order.new(order_params)
     @order.save
   end
 
