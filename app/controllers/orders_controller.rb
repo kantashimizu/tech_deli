@@ -4,6 +4,10 @@ class OrdersController < ApplicationController
     @price = @drink.price * 1.1
   end
 
+  def show
+    @orders = Order.all.order("id DESC")
+  end
+
   def create
     @drink = Drink.find(params[:id])
     @order = Order.new(order_params)

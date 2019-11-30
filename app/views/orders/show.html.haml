@@ -1,0 +1,30 @@
+- @prices = [] 
+.order_all
+  - @orders.each do |order,drink|
+    .user_name_a
+      名前 : 
+      = order.user.name
+    .order_time
+      時間 : 
+      = order.created_at.strftime("%Y/%m/%d %H:%M")
+    .order_name
+      商品 : 
+      = order.drink.name
+    .order_price
+      価格 : 
+      = "#{(order.drink.price * 1.1).to_i}円"
+    .order_seat
+      座席 : 
+      = order.seat
+    - @prices << order.drink.price
+
+.total
+  .total_oder
+    合計注文数 : 
+    = @orders.length
+  .total_price
+    合計金額 : 
+    = @prices.sum    
+
+  
+   

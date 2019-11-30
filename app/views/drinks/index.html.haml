@@ -1,5 +1,8 @@
 .wrapper
   .main
+    -if @owner == current_user
+      = link_to "/orders/show" do
+        管理者
     .main_drink 
       注文するドリンクを選択してください
       .drink_box
