@@ -1,1 +1,12 @@
 ああ
+
+.show_wrapper
+  .drink_info 
+    .drink_image
+    .drink_price
+  %form{action: "/orders" ,method:"post",class: "form"}
+    %input{type: "hidden",name: "user_id",value: current_user.id}
+    %input{type: "hidden",name: "drink_id",value: @drink}
+    %input{type: "submit",value: "購入"}
+
+    
