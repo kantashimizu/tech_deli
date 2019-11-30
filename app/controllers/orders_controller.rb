@@ -1,6 +1,7 @@
 class OrdersController < ApplicationController
   def new
     @drink = Drink.find(params[:id])
+    @price = @drink.price * 1.1
   end
 
   def create
