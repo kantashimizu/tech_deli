@@ -18,10 +18,16 @@ body{margin: 0;}
         height: 100px;
         line-height: 100px;
         font-weight: bold;
-        color: blanchedalmond;
+        color: white;
       }
       .drink_name{
 
+      }
+      .drink_image {
+        img{
+          height: auto;
+          width:120px;
+        }
       }
       .drink_price{
         height: 100px;
@@ -29,24 +35,21 @@ body{margin: 0;}
         color: white;
         margin-top:50px;
         .num{
-          height: 25px;
+          height: 35px;
           font-size:20px;
-          background-color: cornsilk;
+          width:70px;
+          background-color:white;
           margin-top:25px;
         }
         .btn{
           height: 30px;
           font-size:20px;
-          background-color: cornsilk;
+          background-color: white;
           margin-top:30px;
+          border-radius:7px ;
         }
         
       }
-    }
-    .drink_message{
-      margin: 0 auto;
-      width: 20%;
-      color: white;
     }
   }
 }

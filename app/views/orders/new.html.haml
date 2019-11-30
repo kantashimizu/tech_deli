@@ -4,18 +4,11 @@
       .drink_name
         ="購入ドリンク：#{@drink.name}"
       .drink_image
-        %img{src:@drink.image,height: '300',width: '200'}
+        %img{src:@drink.image}
       .drink_price
         ="お会計：#{@price.to_i}円(手数料込み)"
-        %form{action: "/orders" ,method:"post",class: "form"}
+        %form{action: "/orders/#{@drink.id}" ,method:"post",class: "form"}
           %input{type: "text",name: "seat",placeholder: "席番号",class:"num"}
           %input{type: "hidden",name: "user_id",value: current_user.id}
-          %input{type: "hidden",name: "drink_id",value: @drink}
+          %input{type: "hidden",name: "drink_id",value: @drink.id}
           %input{type: "submit",value: "購入",class:"btn"}
-    .drink_message
-      注意書きいっぱいするよ
-      注意書きいっぱいするよ
-      注意書きいっぱいするよ
-      注意書きいっぱいするよ
-      注意書きいっぱいするよ
-      注意書きいっぱいするよ

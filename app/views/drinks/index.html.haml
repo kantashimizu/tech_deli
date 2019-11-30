@@ -1,10 +1,7 @@
 .wrapper
-
   .main
     .main_drink 
       注文するドリンクを選択してください
-  .main
-    .main_drink 
       .drink_box
         - @drinks.each do |drink|
           = link_to "/orders/new/#{drink.id}" do
