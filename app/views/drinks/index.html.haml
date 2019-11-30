@@ -1,6 +1,6 @@
 .wrapper
   .header
-    header
+    = link_to "paso","/orders/1"
   .main
     main
     .main_drink   
@@ -8,5 +8,8 @@
         - @drinks.each do |drink|
           = link_to "/orders/new/#{drink.id}" do
             .drink_image
-              = drink.name
+              drink.image
+          
+          
+          
 
