@@ -2,6 +2,7 @@ body{margin: 0;}
 .wrapper{
     height: 100vh;
     width: 100%;
+    background-color: white;
     .header{
       height: 100px;
       width: 100%;
@@ -12,19 +13,25 @@ body{margin: 0;}
       width: 100%;
       background-color:  black;
       color: white;
+
+
       .main_drink{
-        height: 590px;
-        width: 1400px;
+        height: 650px;
+        width: 1350px;
         margin: 0 auto;
         text-align: center;
         font-size: 30px;
+        background-color: saddlebrown;
+        padding-top: 40px;
+
         .drink_box{
-          height: 560px;
-          margin-left: 35px;
+          height: 600px;
+          margin-left: 10px;
           width: 1330px;
           background-color: black;
           display: flex;
           display: block;
+          padding-top: 20px;
           .drink_image{
             width: 92px;
             margin-left: 5px;
