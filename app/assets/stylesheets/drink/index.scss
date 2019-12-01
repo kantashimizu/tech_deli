@@ -7,24 +7,20 @@ body{margin: 0;}
     a {
       color:black;
     }
-    .header{
-      height: 100px;
-      width: 100%;
-
-    }
     .main{
       height:100vh;
       width: 100%;
       background-color:  black;
       color: white;
       .title {
+        height: 50px;
         display: block;
         margin-left:15px;
         font-family: 'ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
         font-size:27px;
         top:5px;
         left: 5px;
-        
+        border-bottom: white 1px solid;
       }
       .main_drink{
         height: 650px;
