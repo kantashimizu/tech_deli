@@ -1,3 +1,24 @@
+.wrapper-x
+  .bar
+  .before_title
+    ようこそ TECH::DELI へ
+    .notice
+      TECH::DELI とは、ドリンク購入代行サービスです 
+      %br
+      我々が、カフェテリアの自動販売機でドリンクを購入し、お客様のもとへ迅速にお届けします。
+    .info
+      〜使い方〜
+      .contents
+        %img{src:"/紹介2.gif"}
+        .content
+          ⑴商品を選ぶ
+          %br
+          ⑵席番号を入力する
+          %br
+          ⑶購入ボタンを押す
+    .enter
+      Pless: Enter-key 
+ 
 .wrapper
   .main
     .title
@@ -16,10 +37,13 @@
         - else
           .my_page_in
             = link_to "ログイン", new_user_session_path
+      
     - if @time.hour >= 24
+      .main_drink_cover
       .main_drink
         対応時間外です
     -else
+      .main_drink_cover
       .main_drink 
         注文するドリンクを選択してください
         .drink_box

@@ -17,5 +17,14 @@
 //= require jquery_ujs
 //= require_tree .
 $(function(){
-
+  $("html").keyup(function(e){
+    switch(e.which){
+      case 13:
+            var path = location.pathname ;
+            if(path == "/"){
+              $(".wrapper-x").addClass("none")
+            }
+      break
+    }
+  })
 });
