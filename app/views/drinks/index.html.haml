@@ -3,9 +3,18 @@
     .title
       .title_log
         TECH::DELI
-    -if @owner == current_user
-      = link_to "/orders/show" do
-        管理者    
+      .private
+        -if @owner == current_user
+          = link_to "/orders/show" do
+            管理者    
+      .my_page
+        - if user_signed_in?
+          .my_page_auto
+            = "#{current_user.name}様"
+            = link_to "ログアウト", destroy_user_session_path, method: :delete
+        - else
+          .my_page_in
+            = link_to "ログイン", new_user_session_path
     - if @time.hour >= 24
       .main_drink
         対応時間外です
