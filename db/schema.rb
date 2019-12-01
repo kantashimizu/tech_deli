@@ -24,10 +24,9 @@ ActiveRecord::Schema.define(version: 2019_12_01_031949) do
   create_table "orders", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "user_id"
     t.string "drink_id"
-    t.string "seat"
+    t.integer "seat"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "finish"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|

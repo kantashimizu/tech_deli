@@ -16,7 +16,7 @@ class OrdersController < ApplicationController
     @order.save
 
     unless @order.save
-      redirect_to "/orders/new/#{@drink.id}", notice: 'グループを作成しました'
+      redirect_to "/orders/new/#{@drink.id}"
     end
   end
 
