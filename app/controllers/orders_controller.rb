@@ -14,6 +14,10 @@ class OrdersController < ApplicationController
     @order = Order.new(order_params)
     @price = @drink.price * 1.1
     @order.save
+
+    unless @order.save
+      redirect_to "/orders/new/#{@drink.id}", notice: 'グループを作成しました'
+    end
   end
 
 
