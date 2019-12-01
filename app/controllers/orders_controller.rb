@@ -13,9 +13,9 @@ class OrdersController < ApplicationController
     @drink = Drink.find(params[:id])
     @order = Order.new(order_params)
     @price = @drink.price * 1.1
-    @order.save
-
-    unless @order.save
+    if @order.save
+      TestMailer.sendmaild_confirm.deliver
+    else @order.save
       redirect_to "/orders/new/#{@drink.id}", notice: 'グループを作成しました'
     end
   end
