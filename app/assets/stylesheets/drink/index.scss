@@ -8,8 +8,8 @@ body{margin: 0;}
       color:black;
     }
     .main{
-      height:100vh;
-      width: 100%;
+      height:1300px;
+      width: 100vw;
       background-color:  black;
       color: white;
       .title {
@@ -23,7 +23,7 @@ body{margin: 0;}
         border-bottom: white 1px solid;
       }
       .main_drink{
-        height: 650px;
+        height: 1000px;
         width: 1350px;
         margin: 0 auto;
         text-align: center;
