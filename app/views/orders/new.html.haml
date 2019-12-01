@@ -13,8 +13,11 @@
         ="お会計：#{@price.to_i}円"
         .kome
           (手数料込み) 
+        .top
+          = link_to root_path ,class:"top-btn" do
+            戻る
         %form{action: "/orders/#{@drink.id}" ,method:"post",class: "form"}
-          %input{type: "number",name: "seat",placeholder: "席番号",class:"num"}
+          %input{type: "number",name: "seat",placeholder: "席番号",class:"num",max: "999", min: "1"}
           %input{type: "hidden",name: "user_id",value: current_user.id}
           %input{type: "hidden",name: "drink_id",value: @drink.id}
           %input{type: "hidden",name: "finish",value: "0"}
