@@ -3,7 +3,7 @@ class CreateOrders < ActiveRecord::Migration[5.2]
     create_table :orders do |t|
       t.string :user_id
       t.string :drink_id
-      t.string :seat
+      t.integer :seat
       t.timestamps
     end
   end
