@@ -13,8 +13,8 @@ class OrdersController < ApplicationController
     @drink = Drink.find(params[:id])
     @order = Order.new(order_params)
     @price = @drink.price * 1.1
-    @order.save
 
+    @order.save
     unless @order.save
       redirect_to "/orders/new/#{@drink.id}"
     end
