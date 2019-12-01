@@ -21,6 +21,18 @@ body{margin: 0;}
         top:5px;
         left: 5px;
         border-bottom: white 1px solid;
+        display: flex;
+        justify-content: space-between;
+        line-height: 50px;
+        a{
+          color:white !important;
+          text-decoration: none !important;
+
+        }
+        .my_page{
+          margin-right: 20px;
+          font-size:17px;
+        }
       }
       .main_drink{
         height: 1000px;
