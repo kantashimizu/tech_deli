@@ -8,6 +8,28 @@ body{margin: 0;}
     height:calc(100vh);
     width: 100%;
     background-color:rgba(28, 26, 26,1);
+    .title {
+      height: 50px;
+      display: block;
+      margin-left:15px;
+      font-family: 'ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+      font-size:27px;
+      top:5px;
+      left: 5px;
+      border-bottom: white 1px solid;
+      display: flex;
+      justify-content: space-between;
+      line-height: 50px;
+      a{
+        color:white !important;
+        text-decoration: none !important;
+
+      }
+      .my_page{
+        margin-right: 20px;
+        font-size:17px;
+      }
+    }
     
     margin: 0 auto;
     .drink_info{
