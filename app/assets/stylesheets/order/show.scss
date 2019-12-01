@@ -1,6 +1,35 @@
-.order_seat{
-  border-bottom:black 1px solid;
+.show_wrapper {
+  background-color: black;
+  color:white;
+  width:100%;
+  height: 100vh;
+  text-align: center;
+  .total{
+    border:1px solid white;
+    padding:20px ;
+    width:400px;
+    margin: 0 auto;
+  }
+  .order_all {
+    padding:20px ;
+    width:400px;
+    margin: 0 auto;
+    border:1px solid white;
+    .order_finish{
+      display: block;
+      
+      width:130px;
+      margin: 0 auto;
+      margin-top:20px;
+      margin-bottom: 20px;
+      a{
+      color: red;
+      background-color: white;
+      }
+    }
+  
 }
-.total{
-  border-bottom:black 1px solid;
+
+
+
 }

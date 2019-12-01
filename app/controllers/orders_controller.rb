@@ -6,7 +6,7 @@ class OrdersController < ApplicationController
   end
 
   def show
-    @orders = Order.all.order("id DESC")
+    @orders = Order.all.order(id: "DESC")
   end
 
   def create
@@ -16,11 +16,17 @@ class OrdersController < ApplicationController
     @order.save
   end
 
+  def finish
+    @order = Order.find(params[:id])
+    @order.update(finish: "1")
+    redirect_to orders_show_path
+  end
+
 
   private
 
   def order_params
-    params.permit(:seat,:user_id,:drink_id)
+    params.permit(:seat,:user_id,:drink_id,:finish)
   end
 
 end
