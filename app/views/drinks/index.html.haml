@@ -2,7 +2,8 @@
   .main
     .title
       .title_log
-        TECH::DELI
+        = link_to root_path ,class:"header-btn" do
+          TECH::DELI
       .private
         -if @owner == current_user
           = link_to "/orders/show" do
@@ -23,11 +24,18 @@
         注文するドリンクを選択してください
         .drink_box
           - @drinks.each do |drink|
-            = link_to "/orders/new/#{drink.id}" do
-              .drink_image
-                %img{src:drink.image}
-                .drink_name
-                  = drink.name
+            - if user_signed_in?
+              = link_to "/orders/new/#{drink.id}" do
+                .drink_image
+                  %img{src:drink.image}
+                  .drink_name
+                    = drink.name
+            - else
+              = link_to root_path do
+                .drink_image
+                  %img{src:drink.image}
+                  .drink_name
+                    = drink.name
         
 -# (@time.hour >= 11 && @time.hour <= 12) || (@time.hour >= 18 && @time.hour <= 19) || (@time.hour <= 10) || (@time.hour >= 22)
 

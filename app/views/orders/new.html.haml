@@ -1,5 +1,9 @@
 .background_new
   .show_wrapper
+    .title
+      .title_log
+        = link_to root_path ,class:"header-btn" do
+          TECH::DELI
     .drink_info 
       .drink_name
         ="購入ドリンク：#{@drink.name}"
