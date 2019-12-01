@@ -1,6 +1,5 @@
 .background_new
   .show_wrapper
-    = link_to "home",root_path
     .drink_info 
       .drink_name
         ="購入ドリンク：#{@drink.name}"
@@ -17,4 +16,7 @@
         ="#{@order.user.name} 様"
       .create_num
         ="座席番号: #{@order.seat}"
+      .top
+        = link_to root_path ,class:"top-btn" do
+          ホームへ
 

@@ -12,3 +12,23 @@
   font-size: 23px;
   margin-top: 15px;
 }
+.top{
+  color: white;
+  display: block;
+  font-size: 23px;
+  margin-top: 15px;
+
+  a {
+    color: white !important;
+  }
+  .top-btn{
+    color: white;
+    opacity: 0.5;
+
+    &:hover{
+      opacity: 1;
+      display: block;
+    }
+      
+  }
+}
