@@ -26,9 +26,13 @@
         = link_to root_path ,class:"header-btn" do
           TECH::DELI
       .private
+<<<<<<< Updated upstream
         -if @owner == current_user
+=======
+        -if user_signed_in? && @owner.id == current_user.id
+>>>>>>> Stashed changes
           = link_to "/orders/show" do
-            管理者    
+            管理者
       .my_page
         - if user_signed_in?
           .my_page_auto
