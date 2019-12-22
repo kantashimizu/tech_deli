@@ -21,9 +21,14 @@ TECH::DELIとはTECH::EXPERTで勉強している人のためのドリンク購�
 
 ## 開発メンバー
 
-### 田村友哉(たむらともや
+### 田村友哉(たむらともや)
+<https://github.com/tamutomo223>
+
 ### 武石尚大(たけいしなおひろ)
+<https://github.com/takeishinaohiro>
+
 ### 清水幹太(しみずかんた)
+<https://github.com/#2kantashimizu>
 
 ## 具体的な機能紹介
 
