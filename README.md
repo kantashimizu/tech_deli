@@ -42,7 +42,7 @@ Enterキーが押された時にjs起動で、後ろに隠れている商品選�
 ### ・注文機能
 座席番号の入力をして、購入ボタンを押すとデータベースに入る
 
-<img width="200" alt="スクリーンショット 2019-12-02 15 58 34" src="https://user-images.githubusercontent.com/57092560/71322317-b6cc5800-2509-11ea-80fb-8c5cd079f1c2.png"><img width="200" alt="スクリーンショット 2019-12-02 15 58 46" src="https://user-images.githubusercontent.com/57092560/71322318-b764ee80-2509-11ea-9f4b-39ac91f5d678.png">
+<img width="250" alt="スクリーンショット 2019-12-02 15 58 34" src="https://user-images.githubusercontent.com/57092560/71322317-b6cc5800-2509-11ea-80fb-8c5cd079f1c2.png"><img width="200" alt="スクリーンショット 2019-12-02 15 58 46" src="https://user-images.githubusercontent.com/57092560/71322318-b764ee80-2509-11ea-9f4b-39ac91f5d678.png">
 
 
 ### ・管理者ページ
