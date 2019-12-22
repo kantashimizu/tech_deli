@@ -1,24 +1,58 @@
-# README
+# このアプリについて
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## TECH::DELIとは
+TECH::DELIとはTECH::EXPERTで勉強している人のためのドリンク購入代行、配達サービスです。
+勉強中は自動販売機まで行く時間も、もったいないですよね！
 
-Things you may want to cover:
+## 概要
+アプリ名： TECH::DELI
 
-* Ruby version
+使用言語：Ruby on Rails、JavaScript
 
-* System dependencies
+主な機能：ユーザー登録、商品選択、注文、管理者のみが履歴の確認
 
-* Configuration
+作業人数：3人
 
-* Database creation
+作業時間：13時間
 
-* Database initialization
+## アプリを作ったきっかけ
+カリキュラムの関係上、制作に取れる時間が15時間ほどしかなかったので、
+3人で協力して限られた時間の中で、どれだけのものを作れるのか、試してみたかった。
 
-* How to run the test suite
+## 開発メンバー
 
-* Services (job queues, cache servers, search engines, etc.)
+### 田村友哉(たむらともや
+### 武石尚大(たけいしなおひろ)
+### 清水幹太(しみずかんた)
 
-* Deployment instructions
+## 具体的な機能紹介
 
-* ...
+### ・アプリの説明
+トップページに入る前に、上に重ねたアプリ紹介ページを表示。Gif画像を使い、わかりやすく。
+Enterキーが押された時にjs起動で、後ろに隠れている商品選択ページが表示。
+
+<img width="300" alt="スクリーンショット 2019-12-02 15 58 07" src="https://user-images.githubusercontent.com/57092560/71322316-b6cc5800-2509-11ea-8d30-52b46b7acb90.png">
+
+
+### ・商品の選択
+カーソルがhoverした時にドリンク名の表示とドリンクをくっきり表示する。対応時間外は時間外用のビューが表示される。
+
+<img width="300" alt="スクリーンショット 2019-12-02 15 57 55" src="https://user-images.githubusercontent.com/57092560/71322315-b633c180-2509-11ea-8043-e22bd29ce8fb.png">
+
+### ・注文機能
+座席番号の入力をして、購入ボタンを押すとデータベースに入る
+
+<img width="200" alt="スクリーンショット 2019-12-02 15 58 34" src="https://user-images.githubusercontent.com/57092560/71322317-b6cc5800-2509-11ea-80fb-8c5cd079f1c2.png"><img width="200" alt="スクリーンショット 2019-12-02 15 58 46" src="https://user-images.githubusercontent.com/57092560/71322318-b764ee80-2509-11ea-9f4b-39ac91f5d678.png">
+
+
+### ・管理者ページ
+管理者のみが入れるページを作成し、そこでは注文の履歴と、配達が完了しているか否かの表示ができる
+
+<img width="300" alt="スクリーンショット 2019-12-02 15 59 08" src="https://user-images.githubusercontent.com/57092560/71322319-b764ee80-2509-11ea-86dc-ebd8b055e0ee.png">
+
+## 開発において、工夫したこと
+・いかにスピード感を持って実装できるかを意識して、しっかりと役割分担をした
+・コンフリクトなどのトラブルに瞬時に対応するため、常に一緒に作業した
+・ある程度設計を終えたら、とりあえず手を動かした
+・3人で意見を常に出し合って、新しいことを実装できないか考えた
+・アプリの使い方ページなど、非同期でできる部分がないか考えて実装した
